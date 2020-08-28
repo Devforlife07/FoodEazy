@@ -110,7 +110,7 @@ Router.post("/success", async (req, res) => {
     let name = user.name;
     let user_id = order.user;
     var mailOptions = {
-      from: "mihir07036@gmail.com",
+      from: "mailfoodeazy@gmail.com",
       to: `${email}`,
       subject: "Order Confirmation",
       text: "That was easy!",
