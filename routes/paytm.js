@@ -14,7 +14,7 @@ const shortid = require("shortid");
 const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
-      api_key: "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",
+      api_key: process.env.SEND_GRID_KEY,
     },
   })
 );
