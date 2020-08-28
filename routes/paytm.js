@@ -20,6 +20,7 @@ const transporter = nodemailer.createTransport(
 );
 
 Router.post("/", auth, async (req, res) => {
+  console.log(process.env.SEND_GRID_KEY)
   let params = {};
   let order_id = crypto.randomBytes(16).toString("hex");
   (params["MID"] = process.env.MERCHANT_ID),
