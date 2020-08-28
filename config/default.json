@@ -1,0 +1,8 @@
+{
+  "mongoURL": "mongodb+srv://mihir0699:mummy0707@food-eazy.ayhki.mongodb.net/test",
+  "jwtSecret": "mihir",
+  "cloud_name": "devforlife07",
+  "api_key": "317139938926278",
+  "api_secret": "KKN1YT6lqccg0U--XfigWrcUJnE",
+  "sendgrid_mail_api": "Bct_NX9Wqe-GhHdmLCaTyc"
+}
