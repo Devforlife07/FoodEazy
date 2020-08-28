@@ -1,0 +1,658 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.row {
+  margin: auto !important;
+}
+
+.Card {
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 0.4rem auto;
+  height: 37vh;
+  padding: 0.5rem;
+  /* box-shadow: 10px 10px 8px #888888; */
+}
+
+.fa-plus-circle,
+.fa-minus-circle {
+  color: #007bff;
+}
+
+.food {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+}
+
+.Card:hover {
+  /* transform: scale(1.05); */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+  font-family: "Merienda One", cursive;
+}
+
+.fa-stack {
+  font-size: 1.7rem;
+}
+
+#ex2 .fa-stack[data-count]:after {
+  position: absolute;
+  right: 0%;
+  top: 1%;
+  content: attr(data-count);
+  font-size: 35%;
+  padding: 0.6em;
+  border-radius: 999px;
+  line-height: 0.5em;
+  color: white;
+  background: rgba(255, 0, 0, 0.85);
+  text-align: center;
+  min-width: 2em;
+  font-weight: bold;
+}
+
+.cart-icon {
+  color: black;
+  /* font-size: 2rem; */
+}
+
+.cart-icon:hover {
+  color: black;
+}
+
+.menuImage {
+  height: 40%;
+  border-radius: 15px;
+}
+
+.itemlist {
+  display: flex !important;
+  align-items: center;
+  max-width: 70vw;
+  padding: 1rem;
+  height: 20vh;
+  margin: 0.6rem auto;
+  border-bottom: solid grey 0.3px;
+  /* border-radius: 20px; */
+}
+
+.itemlist div {
+  margin: 0.5rem;
+}
+
+.img_show img {
+  width: 12vw !important;
+  height: 15vh !important;
+  border-radius: 8% !important;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+  align-items: center;
+}
+
+.img_show {
+  flex: 0;
+}
+
+.btn1 {
+  border: none;
+  /* Remove borders */
+  padding: 0px;
+  /* Some padding */
+  font-size: 15px;
+  /* Set a font size */
+  cursor: pointer;
+  /* Mouse pointer on hover */
+  background: transparent;
+  outline: 0;
+  margin: 0.3rem;
+  border-color: #fff;
+}
+
+.btn1:focus {
+  outline: none;
+}
+
+.numbers {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+.numbers1 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.il {
+  position: absolute;
+  left: 0;
+}
+
+.amount {
+  font-family: "Sora", sans-serif;
+  font-size: 2rem;
+}
+
+.btn2 {
+  border: none;
+  /* Remove borders */
+  padding: 5px 12px;
+  /* Some padding */
+  font-size: 15px;
+  /* Set a font size */
+  cursor: pointer;
+  /* Mouse pointer on hover */
+  background: transparent;
+  outline: 0;
+  margin: 0.3rem;
+  border-color: #fff;
+}
+
+.btn2:focus {
+  outline: none;
+}
+
+.input {
+  border-radius: 16px;
+  line-height: 1585rem;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.cart-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.1rem;
+}
+
+.card-body {
+  padding: 0.8rem;
+}
+
+.btn2 {
+  padding: 0.2rem;
+}
+
+.buttons {
+  margin-top: 0;
+}
+
+.cross {
+  font-size: 1rem;
+}
+
+.cross:hover {
+  cursor: pointer;
+}
+
+.crossicon {
+  position: absolute;
+  right: 10px;
+  z-index: 199;
+  font-size: 1rem;
+}
+
+.text1 {
+  border-radius: 10px !important;
+}
+
+i:active {
+  font-size: 1rem;
+}
+
+.fa-search {
+  color: blue;
+  background: white;
+  border-right: 0px;
+}
+
+.input-group-text {
+  background: white;
+  border-right: 0px;
+}
+
+.nav:hover {
+  text-decoration-line: none;
+}
+
+.fa-times:hover {
+  cursor: pointer;
+}
+
+.item-enter {
+  opacity: 0;
+}
+
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 10000ms ease-in;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 10000ms ease-in;
+}
+
+.hamburger {
+  display: none;
+}
+
+.logout-btn {
+  left: 5px;
+}
+
+.navLogout {
+  /* padding: 0.4rem 0.6rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.4rem;
+}
+
+.navLogout a {
+  display: block;
+  margin: auto;
+}
+
+.navLogout a:hover {
+  display: block;
+  margin: auto;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.navLogout button {
+  padding: 0.4rem 0.4rem;
+  color: white;
+  border: none;
+  background: transparent;
+}
+
+.navLogout button:hover {
+  padding: 0.4rem 0.4rem;
+  color: hsla(0, 0%, 100%, 0.7);
+  border: none;
+  background: transparent;
+}
+
+.toast {
+  width: 30vw;
+  /* color: white; */
+  /* font-size: 1.6rem; */
+  font-weight: bold;
+  max-height: 20vh;
+  width: 40vw;
+  z-index: 10000;
+  right: 0;
+}
+
+.navbar {
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+.img_show2 {
+  width: 10vw;
+  height: 100%;
+  display: flex;
+}
+
+.veg input label {
+  padding: 2rem;
+}
+
+.forget {
+  margin: auto;
+  margin-top: 8vh;
+  border-top: 5px solid blue;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.8rem;
+  width: 70%;
+}
+
+.forget1 {
+  border-top: 5px solid blue;
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2rem 1rem;
+  width: 80%;
+  margin: auto;
+}
+
+#dropdown-basic::after {
+  content: none;
+}
+
+.order {
+  flex: 2;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.checkoutRight {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right,
+      #77a1d3 0%,
+      #79cbca 51%,
+      #77a1d3 100%);
+}
+
+.btn-grad:hover {
+  background-position: right center;
+}
+
+.paymentContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.paymentForm {
+  padding: 2rem;
+}
+
+.order {
+  padding: 0 0.2rem;
+  border-right: solid 1px grey;
+}
+
+.navLogout:hover {
+  color: grey;
+}
+
+.navLogout .bg_grey:hover {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.mode {
+  font-family: "Alata", sans-serif;
+}
+
+.successContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+.details>div {
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.contact_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_container>div {
+  text-align: center;
+  margin-top: 5vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-bottom: 10vh;
+}
+
+.contact_container>div:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.contact_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_container>div:hover {
+  box-shadow: 5px 5px 20px rgba(182, 151, 151, 0.6);
+}
+
+.contact_item {
+  border: 2px solid rgb(30, 144, 255);
+}
+.empty{
+   margin: auto; 
+   width: 40% ;
+   height:60vh;
+   margin-top:4rem
+}
+
+.cartItems {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cartContainer {
+  flex: 2;
+  padding: 1rem;
+}
+
+.summary {
+  padding: 0 0.5rem;
+  max-width: 30%;
+}
+
+.buttonsCart {
+  width: 40%;
+  justify-content: space-around;
+}
+
+.detailsPastOrders {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailsPastOrders>h1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.pastOrdersInfo {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.pastOrderContainer {
+  font-family: mulish;
+  margin: auto;
+  cursor: pointer;
+  width: 90%;
+  padding: 1rem;
+}
+
+.pastOrderContainer>div {
+  /* color: white; */
+  border-image-slice: 1;
+
+  margin-top: 0.8rem;
+  border-width: 2px;
+  padding: 1rem;
+  border-image-source: linear-gradient(to left, #0083b0, #00b4db);
+  border-radius: 8px;
+}
+
+.pastOrderContainer>div:nth-child(even) {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.pastOrderContainer>div:nth-child(odd) {
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+.pastOrderContainer>div:hover {
+  padding: 1.5rem;
+  box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 1);
+
+  transition: all 0.4s ease-in-out;
+}
+
+.i1 .info {
+  display: flex;
+  justify-content: center;
+  padding: 0.1 0.6rem;
+  font-size: 0.8rem;
+}
+
+.i1 .info>div {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.mainComponent {
+  position: fixed;
+  top: 0;
+  font-family: mulish;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  width: 100vw;
+  background: rgba(117, 83, 83, 0.6);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  z-index: 10000;
+}
+
+.mainComponent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: mulish;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+}
+
+.mainComponent {
+  box-sizing: border-box;
+}
+
+.mainComponent>div {
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  background: linear-gradient(45deg, #007bff, #59bfff);
+  padding: 0.6rem;
+}
+
+.mainComponent div>div {
+  width: 100%;
+  z-index: 10393930939293893289;
+  background: white;
+  border-radius: 25px;
+}
+
+.other>div {
+  padding: 0.3rem;
+}
+
+.items>div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+hr {
+  margin: 0.3rem 0;
+}
+
+.hungryImage {
+  display: none;
+}
+
+.deleteTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "mulish";
+  padding: 0.6rem;
+  max-height: 20vh;
+}
+
+.deleteTitle>h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.deleteTitle>div {
+  max-width: 30vw;
+}
+
+.deleteTitle div {
+  max-width: 25vw;
+  max-height: 20vh;
+}
+
+.verifyImage {
+  text-align: center;
+  flex: 1;
+}
+
+.verifyImage>img {
+  max-width: 35vw;
+  max-height: 35vh;
+}
+
+.parent1 {
+  padding: 0.5rem;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.parent2 {
+  padding: 1 rem;
+  flex: 3;
+}
+
+.sortButton {
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.parent2 {
+  width: 100%;
+}

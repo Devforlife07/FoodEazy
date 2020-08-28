@@ -1,0 +1,293 @@
+@media only screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  /* .parCart {
+    width: 100vw !important;
+  } */
+.empty{
+  margin: auto; 
+  width: 60% ;
+  height:60%;
+  margin-top:4rem
+}
+  .Card {
+    width: 90vw !important;
+    display: flex !important;
+    height: auto;
+    margin: 0.8rem auto;
+    padding: 0.5rem;
+    /* height: 25vh; */
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .Card img {
+    height: 60%;
+  }
+
+  .card-body {
+    padding: 1rem;
+    flex: 1;
+  }
+
+  .container {
+    padding: 0 !important;
+  }
+
+  .menuImage {
+    padding: 0;
+    width: 30%;
+    flex: 1;
+    height: 80%;
+  }
+
+  .noItem {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    image-rendering: auto;
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  .crossicon {
+    font-size: 1.5rem;
+  }
+
+  .left_align {
+    font-size: 0.75rem;
+  }
+
+  i:active {
+    font-size: 0.95rem;
+  }
+
+  .itemlist {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .itemlist h2 {
+    font-size: 1.2rem !important;
+  }
+
+  .numbers1 {
+    font-size: 1.7rem !important;
+  }
+
+  .img_show {
+    height: 100%;
+    flex: 1;
+  }
+
+  .img_show img {
+    width: 100% !important;
+    margin: auto;
+  }
+
+  .navbar {
+    text-align: center !important;
+  }
+
+  .mobileNav {
+    position: sticky;
+    top: 3.8rem !important;
+    z-index: 10097;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    background: #007bff;
+  }
+
+  .titl {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+
+  .mainSide {
+    display: flex;
+    position: fixed;
+    margin: -100000000px;
+    width: 100%;
+    /* height: 100vh ; */
+    overflow: hidden;
+    z-index: 1000900900;
+  }
+
+  .mainSide .left {
+    flex: 2;
+    height: 100vh;
+    background: #007bff;
+  }
+
+  .mainSide .left ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mainSide .left ul li {
+    color: white;
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: 0;
+  }
+
+  .mainSide .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+
+  .minus {
+    /* position: absolute; */
+    transition: all 0.5s ease-in;
+    margin: auto;
+    /* left: 0; */
+    /* top: 0; */
+  }
+
+  .navLogout {
+    display: none;
+  }
+
+  .name {
+    color: white;
+    padding: 1rem 0.1rem;
+    white-space: wrap;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .toast {
+    width: 50vw;
+    height: 17vh;
+  }
+
+  .forget {
+    width: 95%;
+    padding: 2.5rem 0;
+  }
+
+  .paymentContainer {
+    flex-direction: column;
+  }
+
+  .order {
+    border: none;
+  }
+
+  .cartItems {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .summary {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .details {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details>div {
+    margin: 0;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .hungryImage {
+    display: block;
+  }
+
+  .pastOrderContainer {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+
+  .pastOrderContainer>h1 {
+    text-align: center;
+  }
+
+  .pastOrderContainer div {
+    width: 100% !important;
+    flex-direction: column;
+  }
+
+  .mainComponent>div {
+    width: 100%;
+  }
+
+  .i1 .info>div {
+    flex-direction: column;
+  }
+
+  .buttonsCart {
+    width: 100%;
+  }
+
+  .i1 .info {
+    flex-direction: column;
+  }
+
+  .parent1 {
+    flex-direction: column;
+    flex-wrap: none;
+
+  }
+
+  .forget1 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .verifyImage {
+    width: 80%;
+    margin: auto;
+  }
+
+  .verifyImage>img {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+  }
+
+  .sortButton {
+    display: flex;
+    width: 95vw;
+    margin: auto;
+    justify-content: flex-end;
+
+  }
+
+  .dropdown>.btn {
+    max-height: 7vh;
+    padding: 0.3 0.5rem;
+    width: 30vw;
+  }
+
+  .img_show2 {
+    width: 30%;
+  }
+
+
+}

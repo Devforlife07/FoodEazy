@@ -1,0 +1,5 @@
+node_modules
+.env
+config/default.json
+build
+client/node_modules
