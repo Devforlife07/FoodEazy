@@ -59,6 +59,7 @@ Food Eazy, is an online platform to order food and avoiding the hassle of going 
  **1. Clone this repo by running the following command :-**
  ```bash
   git clone https://github.com/Devforlife07/FoodEazy
+  cd foodeazy
  ```
  
  **2. Now install all the required packages by running the following commands :-**
