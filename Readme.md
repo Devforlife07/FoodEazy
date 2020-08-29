@@ -52,6 +52,7 @@ Food Eazy, is an online platform to order food and avoiding the hassle of going 
 
  - [PayTM API](https://developer.paytm.com/docs/)
  - [Send Grid  API](https://sendgrid.com/)
+ - [Cloudinary API](https://cloudinary.com/)
 
 ## Installation :zap:
 
