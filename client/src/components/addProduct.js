@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState , useContext} from "react";
 import axios from "axios";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import { Form, Toast, Button, InputGroup } from "react-bootstrap";
 import "animate.css";
 import { TextField } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/";
+import LoadingContext from "../context/loading/loadingContext";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 const AddProduct = () => {
   const [status, setStatus] = useState({ val: 0, msg: "", type: "" });
+  const { Loader} = useContext(LoadingContext);
   const [loading,setLoading] = useState(0);
   let class1 = "";
   const [data, setData] = useState({
@@ -110,8 +112,8 @@ const AddProduct = () => {
   return (
     <>
       {status.val ? <Alert /> : ""}
-      {loading==1?<div><img src={require("../images/Spinner.gif")}/></div>:<>
-      <h3 style={{ marginTop: "6vh", fontFamily: "Mulish" }}>Add a Dish</h3>
+      {loading==1?<div><Loader/></div>:<>
+      <h3 style={{ marginTop: "6vh", fontFamily: "Mulish" }}>Add a Dish{" "}<img src='https://image.flaticon.com/icons/svg/2917/2917633.svg' style={{height: '10vh'}}/></h3>
       <div className="forget animate__animated animate__lightSpeedInLeft">
         <Form
           style={{ padding: "0rem", flex: "2" }}
