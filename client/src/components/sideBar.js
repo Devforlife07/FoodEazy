@@ -3,8 +3,7 @@ import AuthContext from "../context/auth/authContext";
 import { Link, Redirect } from "react-router-dom";
 import "animate.css";
 const Sidebar = (props) => {
-  const { logout, isAuthenticated, user } = useContext(AuthContext);
-  const {verify} = user;
+  const { logout, isAuthenticated, user, verified } = useContext(AuthContext);
   const [display,setDisplay]= useState(1);
  
   useEffect(()=>{
@@ -72,7 +71,7 @@ const Sidebar = (props) => {
           )}
           {/* {!isAuthenticated ? <li>SignUp</li> : ""} */}
 
-          {isAuthenticated && verify && (
+          {isAuthenticated && verified && (
             <li onClick={props.changeDisplay}>
               <Link
                 style={{ textDecoration: "none", color: "white" }}
@@ -82,7 +81,7 @@ const Sidebar = (props) => {
               </Link>
             </li>
           )}
-          {isAuthenticated && verify ? (
+          {isAuthenticated && verified ? (
             <li onClick={props.changeDisplay}>
               {" "}
               <Link
@@ -95,7 +94,7 @@ const Sidebar = (props) => {
           ) : (
             ""
           )}
-          {isAuthenticated && verify && (
+          {isAuthenticated && verified && (
             <li onClick={props.changeDisplay}>
               {" "}
               <Link
@@ -115,7 +114,7 @@ const Sidebar = (props) => {
               Contact Us
             </Link>
           </li>
-          {isAuthenticated && verify && (
+          {isAuthenticated && verified && (
             <li onClick={props.changeDisplay}>
               {" "}
               <Link

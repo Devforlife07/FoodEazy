@@ -111,7 +111,7 @@ const AddProduct = () => {
     <>
       {status.val ? <Alert /> : ""}
       {loading==1?<div><img src={require("../images/Spinner.gif")}/></div>:<>
-      <h3 style={{ marginTop: "6vh", fontFamily: "Mulish" }}>Add a Dish</h3>
+      <h3 style={{ marginTop: "6vh", fontFamily: "Mulish" }}>Add a Dish{" "}<img src='https://image.flaticon.com/icons/svg/2917/2917633.svg' style={{height: '10vh'}}/></h3>
       <div className="forget animate__animated animate__lightSpeedInLeft">
         <Form
           style={{ padding: "0rem", flex: "2" }}

@@ -40,6 +40,7 @@ const Menu = (props) => {
   const { total_q, loading2 } = useContext(CartContext);
   const { isAuthenticated, current, displayVerified } = useContext(AuthContext);
   const [email, setEmail] = useState(false);
+
   const handleChange = (e) => {
     setText(e.target.value);
     if (e.target.value !== "") {
@@ -59,16 +60,16 @@ const Menu = (props) => {
       setLoading(loadItems());
     }
   }, [isAuthenticated]);
-  useEffect(() => {
 
+  useEffect(() => {
     if (text1 === "") {
       setFilter(items);
     } else {
       setFilter(filtered);
     }
-  }, [filtered, items, isAuthenticated]);
+  }, [filtered, items, isAuthenticated, handleClick]);
+
   useEffect(() => {
-    console.log("isEmail Verified= " + displayVerified);
     if (displayVerified) {
       setEmail(true);
       setTimeout(() => {
@@ -80,6 +81,7 @@ const Menu = (props) => {
   const handleClick = (e) => {
     setText("");
   };
+
   const crossIcon = () => {
     if (text1) {
       return (
@@ -158,8 +160,6 @@ const Menu = (props) => {
             value={text1}
             className="searchbar"
           />
-
-          {crossIcon()}
         </InputGroup>
       </div>
       {loading1 || loading2 ? (
@@ -249,6 +249,7 @@ const Menu = (props) => {
             <span
               className="fa-stack fa-5x has-badge fa-sm"
               data-count={total_q}
+              style={{marginRight : '0.5rem', marginBottom : '0.5rem'}}
             >
              <Link to="/cart" className="cart-icon">
                 <img
