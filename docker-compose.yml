@@ -16,7 +16,16 @@ services:
             - ./default.conf:/etc/nginx/conf.d/default.conf
             - certbot-etc:/etc/letsencrypt
             - certbot-var:/var/lib/letsencrypt   
-
+    certbot:
+      image: certbot/certbot
+      container_name: certbot
+      volumes:
+        - certbot-etc:/etc/letsencrypt
+        - certbot-var:/var/lib/letsencrypt
+        - web-root:/var/www/html
+      depends_on:
+        - webserver
+      command: certonly --webroot --webroot-path=/var/www/html --email devansh.forlife@gmail.com --agree-tos --no-eff-email --staging -d foodeazy.devforlife07.codes  -d www.foodeazy.devforlife07.codes
     # letsencrypt-nginx-container:
     #     container_name: 'letsencrypt-nginx-container'
     #     image: nginx:latest
@@ -41,5 +50,5 @@ volumes:
       driver: local
       driver_opts:
         type: none
-        device: /build
+        device: C:\Users\Devansh\Desktop\foodeazy2
         o: bind   
