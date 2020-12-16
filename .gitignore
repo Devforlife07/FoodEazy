@@ -1,2 +1,7 @@
 node_modules
 client/node_modules
+build
+*.pem
+*.zip
+.env
+config/default.json
