@@ -26,7 +26,7 @@
     "mongoose": "5.9.25",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
-    "nodemailer": "^6.4.10",
+    "nodemailer": "^6.4.16",
     "nodemailer-sendgrid-transport": "^0.2.0",
     "query-string": "^6.13.1",
     "querystring": "^0.2.0",
